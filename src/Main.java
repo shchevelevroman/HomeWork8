@@ -1,4 +1,5 @@
 import java.sql.SQLOutput;
+import java.util.concurrent.LinkedTransferQueue;
 
 public class Main {
     public static void main(String[] args) {
@@ -19,10 +20,21 @@ public class Main {
             System.out.print(z + " ");
         }
         System.out.println("");
-        int x = 11;
-        while (x >1){
-            x--;
+        for (int x = 10; x >= 1; x--){
             System.out.print(x + " ");
         }
+        System.out.println(" ");
+        //Задача №3
+        System.out.println("Задача №3");
+        int population = 12_000_000;
+        int growsMan = (population / 1_000) * 17;
+        int declineMan = (population / 1_000) * 6;
+        for (int q = 1; q <= 10; q++) {
+            population = population + growsMan - declineMan;
+            System.out.println("Год " + q + ", численность населения составляет " + population);
+        }
+        // Задача №4
+        System.out.println("Задача №4");
+
     }
 }
