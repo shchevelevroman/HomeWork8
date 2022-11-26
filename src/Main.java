@@ -35,6 +35,11 @@ public class Main {
         }
         // Задача №4
         System.out.println("Задача №4");
+        double startDeposit = 15_000;
+        for (int mouth = 0;startDeposit <= 12_000_000 ; mouth++){
+            startDeposit = startDeposit + startDeposit * 0.07;
+            System.out.println("Месяц " + mouth + " сумма " + startDeposit);
+        }
 
     }
 }
