@@ -7,9 +7,9 @@ public class Main {
         System.out.println("Задача №1");
         int salary = 15_000;
         double total = 0;
-        int i = 0;
-        for ( ; total < 2_459_000; i ++) {
+        for ( int i = 0; total <= 2_459_000; i ++) {
             total = total + salary;
+            if (total >= 2_459_000)
             System.out.println("Месяц " + i + " сумма накоплений равна " + total + " рублей");
         }
         //Задача №2
