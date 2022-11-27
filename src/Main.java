@@ -69,6 +69,18 @@ public class Main {
             }
         //Задача №8
         System.out.println("Задача №8");
-
+        int yearComet = 0;
+        for ( int comet = 0; comet <=2100 ; comet = comet + 79) {
+            yearComet = yearComet + 79;
+            if (yearComet > 1822 && yearComet < 2122)
+                System.out.println(yearComet);
+        }
+        //Задача №9
+        System.out.println("Задача №9");
+        int oneNumber = 2;
+        for (int twoNumber = 1; twoNumber <= 10; twoNumber = twoNumber + 1){
+            int threeNumber = oneNumber * twoNumber;
+            System.out.println(oneNumber + " * " + twoNumber + " = " + threeNumber);
+        }
     }
 }
